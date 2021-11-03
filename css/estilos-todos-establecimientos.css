@@ -62,3 +62,24 @@
 .contenedor-establecimiento article div img{
    border-radius: 0.5em;
 }
+.contenedor-form{
+    width: 90%;
+    margin: auto;
+    text-align:center;
+    padding: 0.6em;
+    margin-top: 5%;
+}
+.contenedor-form select{
+ display:inline-block;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0.3em;
+    margin: auto;
+    border: 0.2em solid #87f;
+    border-radius: 0.5em;
+    font-family: 'Nunito';
+    color: #0631a8;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
