@@ -1,0 +1,20 @@
+#inicio{
+padding: 150px;
+margin: auto;
+background-size: cover; 
+background-position: top;
+box-sizing: border-box;
+position: relative;
+}
+#inicio h2{
+position: absolute;
+padding: 13px;
+color: #363068;
+background-color: rgba(255,255,255,0.7);
+bottom: 32px;
+left: 0;
+font-size: 30px;
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+}
