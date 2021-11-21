@@ -61,4 +61,6 @@
 }
 .contenedor-establecimiento article div img{
    border-radius: 0.5em;
+   max-width: 100%;
+   box-sizing: border-box;
 }
