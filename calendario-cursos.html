@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="css/estilo-compartido.css">
         <link rel="stylesheet" href="css/estilo-calendario.css">
         <link rel="stylesheet" href="css/estilo-presentacion.css">
+        <!--Para usar jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/funciones-menu.js"></script>
+        <script src="js/funciones-calendario.js"></script>
         <link rel="icon" type="image/png" href="img/logo-icono.png">
         <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
         <title>CALI - Calendario de cursos</title>
@@ -81,11 +85,14 @@
         <section class="contenedor-cursos">
             <h2>Octubre</h2>
             <article>
+                <h3>Coreano - Nivel 1</h3>
                 <div>
                     <img src="img/corea-bandera.png" alt="bandera-coreana">
                 </div>
-                <div>
-                    <h3>Coreano - Nivel 1</h3>
+
+               <!--<input type="button" value="Ver mas" id="boton" onclick="mostrarOcultarInfo()">--> 
+               <a class="mostrar">Ver más</a>
+                <div id="curso-1">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -95,14 +102,17 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article> 
             <article>
+                <h3>Inglés - Nivel 1</h3>
                 <div>
                     <img src="img/ingles-uk-bandera.png" alt="bandera-inglaterra">
                 </div>
-                <div>
-                    <h3>Inglés - Nivel 1</h3>
+
+                <a class="mostrar">Ver más</a>
+                <div id="curso-2">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Martes y jueves</li>
@@ -112,14 +122,18 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
+               
             </article>
             <article>
+                <h3>Español - Nivel 2</h3>
                 <div>
                     <img src="img/españa-bandera.png" alt="bandera-españa">
                 </div>
-                <div>
-                    <h3>Español - Nivel 2</h3>
+                
+                <a class="mostrar">Ver más</a>
+                <div id="curso-3"> 
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -129,14 +143,17 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
             <article>
+                <h3>Chino - Nivel 1</h3>
                 <div>
                     <img src="img/china-bandera.png" alt="bandera-china">
                 </div>
-                <div>
-                    <h3>Chino - Nivel 1</h3>
+            
+                <a class="mostrar">Ver más</a>
+                <div id="curso-4">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -146,6 +163,7 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
         </section>
@@ -153,11 +171,13 @@
         <section class="contenedor-cursos">
             <h2>Noviembre</h2>
             <article>
+                <h3>Portugués - Nivel 1</h3>
                 <div>
                     <img src="img/brasil-bandera.png" alt="bandera-brasil">
                 </div>
-                <div>
-                    <h3>Portugués - Nivel 1</h3>
+                
+                <a class="mostrar">Ver más</a>
+                <div id="curso-5">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -167,14 +187,17 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
             <article>
+                <h3>Inglés - Nivel 2</h3>
                 <div>
                     <img src="img/ingles-uk-bandera.png" alt="bandera-inglaterra">
                 </div>
-                <div>
-                    <h3>Inglés - Nivel 2</h3>
+                
+                <a class="mostrar">Ver más</a>
+                <div id="curso-6">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Martes y jueves</li>
@@ -184,14 +207,17 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
             <article>
+                <h3>Español - Nivel 3</h3>
                 <div>
                     <img src="img/españa-bandera.png" alt="bandera-españa">
                 </div>
-                <div>
-                    <h3>Español - Nivel 3</h3>
+                
+                <a class="mostrar">Ver más</a>
+                <div id="curso-7">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -201,14 +227,17 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
             <article>
+                <h3>Alemán - Nivel 1</h3>
                 <div>
                     <img src="img/alemania-bandera.png" alt="bandera-alemania">
                 </div>
-                <div>
-                    <h3>Alemán - Nivel 1</h3>
+                 
+                <a class="mostrar">Ver más</a>
+                <div id="curso-8">
                     <ul>
                         <li>Modalidad: Semipresencial</li>
                         <li>Días:Lunes y miércoles</li>
@@ -218,6 +247,7 @@
                         <li>Precio: $5000</li>
                     </ul>
                     <a class="a-inscripcion" href="inscripcion.html">Inscribirse</a>
+                    <a class="ocultar">Ver menos</a>
                 </div>
             </article>
         </section>
