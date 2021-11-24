@@ -17,6 +17,7 @@ $("document").ready(function(){
      
     $("#provincia").change(function(){
         mostrarCombo();
+        /*NO FUNCIONA COMO ESPERO*/
         mostrarDatos();
     });
 });
