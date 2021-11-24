@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/estilo-compartido.css">
    <link rel="stylesheet" href="css/estilos-todos-establecimientos.css">
     <link rel="stylesheet" href="css/estilo-presentacion.css">
    <link rel="icon" type="image/png" href="img/logo-icono.png">
+   
    <script src="https://kit.fontawesome.com/2f22cf7961.js" crossorigin="anonymous"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="js/funciones-establecimientos.js" type='text/javascript'></script>
@@ -61,16 +63,17 @@
             <label for="establecimiento">filtrar por</label>
             <select name="filtro-sede" id="sede">
                 <option value="" selected>Establecimiento</option>
-                <option value="1">Instituto Mataderos</option>
-                <option value="2">Instituto Milenio</option>
-                <option value="3">Instituto D.Alighieri</option>
-                <option value="4">Instituto Güemes</option>
+                <option value="1">Buenos Aires</option>
+                <option value="2">Salta</option>
+                <option value="3">Rio Negro</option>
+                <option value="4">Cordoba</option>
             </select>
         </form>
     </section>
     <section class="contenedor-establecimiento" >
-            
-            <article >
+      
+          
+            <article id="opcion1">
                  
                 <h3>Buenos Aires</h3>
                 <div><img src="img/cede-central1jpg.png" alt=""></div>
@@ -93,7 +96,8 @@
                    <a href="establecimiento-mataderos.html"> + info</a>
                  </article >
                     <!--------------------SEDE DE SALTA---------------------------------->
-                <article >
+               
+                    <article id="opcion2">
                    
                     <h3>Salta </h3>
                 
@@ -117,7 +121,7 @@
             </article>
             <!--------------------SEDE DE RIO NEGRO------------------------------------------------>
 
-                <article >
+                <article id="opcion3">
                     
                     <h3>Río Negro</h3>
                      <div><img src="img/establecimiento-rio-negro.jpg" alt="sede de rio negro" ></div> 
@@ -138,7 +142,7 @@
             </article>
                
                                 <!--------------------SEDE DE CORDOBA------------------------------------------------>
-                 <article >
+                 <article id="opcion4">
                     <h3>Córdoba</h3> 
                   <div>  <img src="img/establecimiento-cordoba.png" alt="sede de cordoba" ></div>
                   <p>Direccion: Alberti 250, X5105 Villa Allende </p>
@@ -156,6 +160,8 @@
                 </ul>
                 <a href="establecimiento-cordoba.html"> + info</a>
                 </article>
+                <article id="opcion0"></article>
+                
         </section>
             <a href="#arriba" class="arriba"></a>
     </main>
