@@ -1,39 +1,85 @@
-let opProvincias = {
-    bsas : ["", "Instituto Mataderos"],
-    cba : ["", "Instituto Milenio"],
-    rnegro : ["", "Instituto D.Alighieri"],
-    salta : ["", "Instituto Güemes"]
-}
+
+let cursos=[
+    {
+        "establecimiento":"Instituto Mataderos",
+        "direccion":"Murguiondo 2113",
+        "provincia":"bsas",
+        "localidad":"Mataderos",
+        "mail":"institutomataderos@cali.edu.ar"
+    },
+    {
+        "establecimiento": "Instituto Milenio",
+        "direccion":"Alberti 250",
+        "provincia":"cba",
+        "localidad":"Villa Allende",
+        "mail":"institutomilenio@cali.edu.ar"
+    },
+    {
+        "establecimiento":"Instituto D.Alighieri",
+        "direccion":"Beschtedt 141",
+        "provincia":"rnegro",
+        "localidad":"San Carlos de Bariloche",
+        "mail":"institutodalighieri@cali.edu.ar"
+    },
+    {
+        "establecimiento":"Instituto Güemes",
+        "direccion":"Coronel Vidt 342",
+        "provincia":"Salta",
+        "localidad":"Salta",
+        "mail":"institutoguemes@cali.edu.ar"
+    }
+];
 $("document").ready(function(){
+    $(".boton").addClass("separar");
     $('.slider').slick({
         autoplay:true,
-        /*autoplaySpeed: 5000,
-        speed: 300,*/
+      
         dots:true,
         fade:true,
         infinite: true,
         mobileFirst: true
      } ); 
-     
-    $("#provincia").change(function(){
-        mostrarCombo();
+     $("#contenedor-precio").hide();
+    $("#hora-mod   ").change(function(){
+ agregarPrecio($(this).val());
+        
     });
+$(".boton").click(function(){
+       guardarvalores();
 });
 
-function mostrarCombo(){
-    let seleccion =  $("#provincia").val();
-    $("#establecimiento").empty();
+} );
+function guardarvalores(){
+    let dato1=$("#provincia option:selected").html();
+    let dato2=$("#instituto option:selected").html();
+    let dato3=$("#idioma option:selected").html();
+    let dato4=$("#hora-mod option:selected").html();
+    let dato5=$("#output option:selectrd").html();
 
-    opProvincias[seleccion].forEach(function(element, index){
-        $("#establecimiento").append('<option value="'+element+'">'+element+'</option>');
-    });
-}
-
-function mostrarDatos(){
+    localStorage.setItem("provincia",dato1);
+    localStorage.setItem("instituto",dato2);
+    localStorage.setItem("idioma",dato3);
+    localStorage.setItem("hora-mod",dato4);
+    localStorage.setItem("precio",dato5);
+   
     
-		let info = $('#provincia').options[$('#provincia').selectedIndex].text;
+}
+function agregarPrecio(valor){
+    console.log(valor);
 
-		localStorage.setItem($("#provincia"), info);
+    if(valor==1 ||valor==3||valor==7){
+    
+        $(".output").text("5000$");
+       
+        $("#contenedor-precio").show();
 
-		$("#algo").innerHTML = localStorage.getItem($("#provincia"));
+    }else{
+      
+        $(".output").text("3000$");
+       
+        $("#contenedor-precio").show();
+    }
+
+
+
 }

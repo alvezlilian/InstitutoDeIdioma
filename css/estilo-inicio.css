@@ -84,13 +84,14 @@ select{
 	background: transparent;
 }
 .output{
-    display: block;
+    
     border: 0.2em solid #87f;
     border-radius: 0.5em;
     padding: 0.3em 3em;
     background: transparent;
-    margin-bottom: 1.5em;
+    margin-bottom: 3em;
     box-sizing: border-box; 
+    width: 9em
 }
 .boton{
     display:block;
@@ -119,4 +120,11 @@ select, input{
     font-family: 'Nunito', sans-serif; 
     color: #0631a8;
     font-size: 1em; 
+}
+.precio{
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+.separar{
+    margin-top: 3em;
 }

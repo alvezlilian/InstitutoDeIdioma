@@ -13,7 +13,14 @@ $("#form").submit(function(e){
 $("#consulta").keyup(function(e){ 
        validar(e);
 });
+
+$("#tel").keyup(function(e){
+    validar(e);
+});
  
+$("#nombre, #apellido").keyup(function(e){
+    validar(e);
+});
 });
 function validar(e){
    let error=false;
@@ -27,7 +34,7 @@ function validar(e){
        $("#mensajeNombre").append("<p>Debes ingresar tu nombre</p>")
  
    }
-   if($("#apellido").val()==""){
+   if($("#apellido").val().length<2){
     error=true;
     $("#mensajeApellido").append("<p>Debes ingresar tu apellido</p>")
 }
